@@ -1,0 +1,91 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 0, 0);
+    font-family: 'Comic Sans MS';
+    background-color: rgb(212, 212, 216)
+}
+
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+/* navbar */
+
+
+.navbar {
+    background-color: black;
+}
+
+.navbar::before {
+    content: '';
+    border-right: 55px solid black;
+    border-bottom: 80px solid transparent;
+    position: absolute;
+    left: -55px;
+    top: 0;
+    margin-right: -2px;
+}
+
+.navbar::after {
+    content: '';
+    border-left: 55px solid black;
+    border-bottom: 80px solid transparent;
+    position: absolute;
+    right: -55px;
+    top: 0;
+    margin-left: -2px;
+}
+
+.brand-text {
+    font-size: larger;
+    font-weight: 400;
+    color: yellow;
+}
+
+
+.nav-item {
+    font-size: larger;
+    font-weight: 500;
+}
+
+
+/* carousel */
+
+.carousel-wrapper {
+    height: 800px;
+}
+
+
+.carousel .carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    height: 500px;
+}
+
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+
+/* cards */
+
+.card {
+    background-color:rgb(161, 161, 170);
+}
+
+.card-title {
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
