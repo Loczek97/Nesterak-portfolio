@@ -48,15 +48,17 @@ body {
 }
 
 
-.nav-item {
+.nav-item a {
     font-size: larger;
     font-weight: 500;
-    color: rgb(161, 161, 170);
-}
-
-.nav-item:hover {
     color: white;
 }
+
+
+.nav-item a:hover {
+    color: yellow;
+}
+
 
 /* carousel */
 
