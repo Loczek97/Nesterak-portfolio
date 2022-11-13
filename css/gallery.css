@@ -1,0 +1,15 @@
+.card {
+    background-color:rgb(161, 161, 170);
+}
+
+.card-title {
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-text {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
