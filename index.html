@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/gallery.css">
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -24,8 +24,7 @@
       <nav class="navbar navbar-expand-lg d-fixed navbar-dark shadow-lg">
         <div class="container-fluid">
           <a class="navbar-brand align-middle p-3" href="#">
-            <img src="img/logo.png" alt="logo" class="logo" width="55" height="55"
-              class="align-text-center">
+            <img src="img/logo.png" alt="logo" class="logo" width="55" height="55" class="align-text-center">
             <span class="brand-text align-middle">Oskar Nesterak</span>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -136,25 +135,26 @@
           </div>
         </div>
       </div>
-  </main>
-  <!-- contact -->
-  <div class="py-5 col-lg-8 shadow" id="contact">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-md-6 col-lg-6">
-        <h1 class="h1 display-1 text-center">Kontakt</h1>
-        <form>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label display-6">Adres email</label>
-            <input type="email" class="form-control shadow-0" placeholder="Podaj swój email">
+
+      <!-- contact -->
+      <div class="py-5 col-lg-8 shadow-sm rounded" id="contact">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 col-lg-6">
+            <h1 class="h1 display-1 text-center">Kontakt</h1>
+            <form id="form">
+              <label for="email" class="form-label">
+                <h3>Adres email</h3>
+              </label>
+              <input type="email" id="email" class="form-control shadow-0 mb-2" placeholder="Podaj swój email">
+              <textarea id="textarea" class="form-control mb-3" rows="5" placeholder="Wpisz swoją wiadomość..."></textarea>
+              <span class="mt-2 text-danger" id="error"></span><br>
+              <button type="button" class="btn btn-light btn-outline-dark mx-2 mt-4" onclick="clearText()">Wyczyść</button>
+              <button type="submit" class="btn btn-light btn-outline-dark mx-2 mt-4">Wyślij</button>
+            </form>
           </div>
-          <div class="mb-3">
-            <textarea class="form-control" rows="5" placeholder="Wpisz swoją wiadomość..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-light btn-outline-dark">Wyślij</button>
-        </form>
+        </div>
       </div>
-    </div>
-  </div>
+  </main>
   <!-- footer -->
   <footer>
     <div class="container-fluid">

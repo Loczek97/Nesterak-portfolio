@@ -71,6 +71,12 @@ body {
     transform: scale(1.2);
 }
 
+#error 
+{
+    font-size: larger;
+    font-weight: bold;
+}
+
 /* footer */
 
 .footer {
