@@ -1,110 +1,79 @@
+:root {
+    --nav: #39B375;
+    --heading: #FFEC5C;
+    --content: white;
+    --hover: #B4CF66;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(255, 0, 0);
-    font-family: 'Comic Sans MS';
-    background-color: rgb(212, 212, 216)
+    background: rgb(95, 156, 93);
+    background: linear-gradient(30deg, rgba(95, 156, 93, 1) 0%, rgba(138, 193, 84, 1) 50%, rgba(255, 252, 104, 1) 100%);
 }
-
 
 .wrapper {
     width: 80%;
     margin: auto;
 }
 
-/* navbar build */
-
-
-.navbar {
-    background-color: black;
-    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
-}
-
-.navbar::before {
-    content: '';
-    border-right: 55px solid black;
-    border-bottom: 80px solid transparent;
-    position: absolute;
-    left: -55px;
-    top: 0;
-    margin-right: -2px;
-}
-
-.navbar::after {
-    content: '';
-    border-left: 55px solid black;
-    border-bottom: 80px solid transparent;
-    position: absolute;
-    right: -55px;
-    top: 0;
-    margin-left: -2px;
-}
-
-/* navbar text and links */
-
-.brand-text {
-    font-size: larger;
-    font-weight: 400;
-    color: yellow;
-}
-
-
-.nav-item a {
-    font-size: larger;
-    font-weight: 500;
-    color: white;
-}
-
-
-.nav-item a:hover {
-    color: yellow;
-}
-
 
 /* carousel */
 
-.carousel-wrapper {
-    height: 800px;
+.carousel {
+    margin: 0;
+    padding: 0;
+    max-height: 500px;
 }
 
-
 .carousel .carousel-item {
-    height: 500px;
+    min-height: 500px;
 }
 
 .carousel-item img {
     position: absolute;
     object-fit: cover;
-    height: 500px;
+    min-height: 500px;
 }
 
 
 /* contact */
 
 #contact {
-    background-color: rgb(107, 107, 109);
-    color: white;
+    background-color: #146152;
+    width: 100%;
+    color: var(--content);
     padding: 20px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
 }
 
 #contact h1 {
-    color: yellow;
+    color: var(--heading);
+    font-weight: bold;
 }
 
-#contact input[type=email]:focus, #contact textarea:focus {
-    outline-style: 20px solid yellow;
+#contact input[type=email]:focus,
+#contact textarea:focus {
+    box-shadow: none;
+    border: 3px solid var(--heading);
+}
+
+#contact button {
+    background-color: var(--heading);
+    color: black;
+    box-shadow: none;
+    transition: transform 0.5s;
+}
+
+#contact button:hover {
+    transform: scale(1.2);
 }
 
 /* footer */
 
 .footer {
-    background-color: black;
-    color: white;
+    background-color: var(--nav);
+    color: var(--content);
 }
-
-

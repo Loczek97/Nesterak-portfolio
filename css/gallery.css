@@ -1,33 +1,28 @@
 .card {
-    background-color:rgb(107, 107, 109);
-    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
-    /* border: 1px solid black; */
+    background-color: #44803F;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     transition: transform 0.5s;
-    animation-name: card_animation;
-    animation-duration: 0.5s;
+}
+
+.card-img {
+    width: auto;
+    height: auto;
 }
 
 .card-title {
-    color: yellow;
+    color: var(--heading);
     font-weight: bold;
     text-align: center;
 }
 
 .card-text {
-    color: white;
-    font-weight: bold;
+    color: var(--content);
     text-align: center;
-    overflow:   hidden;
+    overflow: hidden;
 }
 
 .card:hover {
-    background-color: rgb(184, 184, 189);
-    transform: scale(1.1);
-}
-
-
-@keyframes card_animation {
-    from {background-color: rgb(107, 107, 109);}
-    to {background-color: rgb(184, 184, 189);}
+    background-color: var(--hover);
+    transform: scale(1.05);
 }

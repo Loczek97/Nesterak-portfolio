@@ -1,0 +1,46 @@
+/* navbar build */
+
+
+.navbar {
+    background-color: var(--nav);
+}
+
+.navbar::before {
+    content: '';
+    border-right: 55px solid var(--nav);
+    border-bottom: 103px solid transparent;
+    position: absolute;
+    left: -55px;
+    top: 0;
+    margin-right: -2px;
+}
+
+.navbar::after {
+    content: '';
+    border-left: 55px solid var(--nav);
+    border-bottom: 103px solid transparent;
+    position: absolute;
+    right: -55px;
+    top: 0;
+    margin-left: -2px;
+}
+
+/* navbar text and links */
+
+.brand-text {
+    font-size: larger;
+    font-weight: 600;
+    color: var(--heading);
+}
+
+
+.nav-item a {
+    font-size: larger;
+    font-weight: 500;
+    color: var(--content);
+}
+
+
+.nav-item a:hover {
+    color: var(--heading);
+}
