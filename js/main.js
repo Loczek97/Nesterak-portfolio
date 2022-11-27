@@ -12,6 +12,8 @@ form.addEventListener('submit', (e) => {
     let messages = [];
 
     if (textarea.value === "" || textarea.value == null) {
+        textarea.style.border = "3px solid red";
+        textarea.style.backgroundColor = "#ffb3b3";
         messages.push('Wpisz wiadomość...');
     }
     else if (textarea.value.length < 10) {
@@ -22,7 +24,14 @@ form.addEventListener('submit', (e) => {
     }
 
     if (email === 0 || email == null) {
+        form.style.border = "3px solid red";
+        form.style.color = "#ffb3b3";
         messages.push('Wpisz email...');
+    }
+    else if(email.incorrect) {
+        email.style.border = "3px solid red";
+        email.style.color = "#ffb3b3";
+        messages.push('Wpisz poprawny email...');
     }
 
     
@@ -31,3 +40,5 @@ form.addEventListener('submit', (e) => {
         errorElement.innerText = messages.join('', '');
     }
 });
+
+
